@@ -2,6 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER giacomo "giacomo@creativecoding.it"
 
 RUN apt-get update
+RUN apt-get install wget
 
 RUN VERSION=neo4j-community-2.2.0
 
