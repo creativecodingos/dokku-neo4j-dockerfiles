@@ -19,3 +19,4 @@ RUN sed -i 's@#allow_store_upgrade=true@allow_store_upgrade=true@' /var/neo4j/co
 ADD . /bin
 
 RUN chmod +x /bin/start_neo4j.sh
+RUN chmod +x /bin/purge_data.sh
