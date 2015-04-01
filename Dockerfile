@@ -16,6 +16,8 @@ RUN sed -i 's@org.neo4j.server.webserver.https.enabled=true@org.neo4j.server.web
 
 RUN sed -i 's@#allow_store_upgrade=true@allow_store_upgrade=true@' /var/neo4j/conf/neo4j.properties
 
+EXPOSE 7474
+
 ADD . /bin
 
 RUN chmod +x /bin/start_neo4j.sh
