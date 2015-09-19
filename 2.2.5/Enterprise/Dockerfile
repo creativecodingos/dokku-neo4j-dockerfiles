@@ -21,7 +21,8 @@ RUN sed -i 's@#allow_store_upgrade=true@allow_store_upgrade=true@' /var/neo4j/co
 EXPOSE 7474
 EXPOSE 1337
 
-ADD . /bin
+ADD ./start_neo4j.sh /bin
+ADD ./purge_data.sh /bin
 
 RUN chmod +x /bin/start_neo4j.sh
 RUN chmod +x /bin/purge_data.sh
