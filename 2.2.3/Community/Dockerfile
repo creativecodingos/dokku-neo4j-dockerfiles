@@ -6,8 +6,8 @@ RUN apt-get update && \
         openjdk-7-jre \
         wget
 
-ENV NEO4J_VERSION 2.2.5
-ENV NEO4J_EDITION enterprise
+ENV NEO4J_VERSION 2.2.3
+ENV NEO4J_EDITION community
 
 RUN wget -O /var/neo4j.tar.gz "http://dist.neo4j.org/neo4j-$NEO4J_EDITION-$NEO4J_VERSION-unix.tar.gz" && \
     tar -xvzf /var/neo4j.tar.gz -C /var && \
